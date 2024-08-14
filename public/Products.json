@@ -1,0 +1,633 @@
+[
+    {
+      "name": "Formal Shirt",
+      "image": "https://via.placeholder.com/150",
+      "description": "Elegant formal shirt suitable for office wear.",
+      "price": "30 $",
+      "brand": "Brand A",
+      "category": "Shirt",
+      "ratings": 4.5,
+      "creationDate": "2024-07-01T00:00:00.000Z"
+    },
+    {
+      "name": "Casual T-Shirt",
+      "image": "https://via.placeholder.com/150",
+      "description": "Comfortable cotton t-shirt for everyday use.",
+      "price": "15 $",
+      "brand": "Brand B",
+      "category": "T-Shirt",
+      "ratings": 4.2,
+      "creationDate": "2024-07-02T00:00:00.000Z"
+    },
+    {
+      "name": "Jeans Pant",
+      "image": "https://via.placeholder.com/150",
+      "description": "Stylish jeans pant made with premium denim.",
+      "price": "40 $",
+      "brand": "Brand C",
+      "category": "Pant",
+      "ratings": 4.4,
+      "creationDate": "2024-07-03T00:00:00.000Z"
+    },
+    {
+      "name": "Designer Sari",
+      "image": "https://via.placeholder.com/150",
+      "description": "Beautiful sari with intricate designs for special occasions.",
+      "price": "120 $",
+      "brand": "Brand D",
+      "category": "Sari",
+      "ratings": 4.8,
+      "creationDate": "2024-07-05T00:00:00.000Z"
+    },
+    {
+      "name": "Running Shoes",
+      "image": "https://via.placeholder.com/150",
+      "description": "Lightweight running shoes with great cushioning.",
+      "price": "50 $",
+      "brand": "Brand E",
+      "category": "Shoe",
+      "ratings": 4.6,
+      "creationDate": "2024-07-07T00:00:00.000Z"
+    },
+    {
+      "name": "Formal Pant",
+      "image": "https://via.placeholder.com/150",
+      "description": "Classic formal pant, ideal for business meetings.",
+      "price": "55 $",
+      "brand": "Brand F",
+      "category": "Pant",
+      "ratings": 4.3,
+      "creationDate": "2024-07-09T00:00:00.000Z"
+    },
+    {
+      "name": "Summer T-Shirt",
+      "image": "https://via.placeholder.com/150",
+      "description": "Breathable and light t-shirt perfect for summer.",
+      "price": "20 $",
+      "brand": "Brand B",
+      "category": "T-Shirt",
+      "ratings": 4.1,
+      "creationDate": "2024-07-11T00:00:00.000Z"
+    },
+    {
+      "name": "Leather Shoes",
+      "image": "https://via.placeholder.com/150",
+      "description": "Premium leather shoes for formal occasions.",
+      "price": "70 $",
+      "brand": "Brand E",
+      "category": "Shoe",
+      "ratings": 4.7,
+      "creationDate": "2024-07-12T00:00:00.000Z"
+    },
+    {
+      "name": "Cotton Sari",
+      "image": "https://via.placeholder.com/150",
+      "description": "Soft cotton sari for casual wear.",
+      "price": "80 $",
+      "brand": "Brand D",
+      "category": "Sari",
+      "ratings": 4.4,
+      "creationDate": "2024-07-13T00:00:00.000Z"
+    },
+    {
+      "name": "Classic Trousers",
+      "image": "https://via.placeholder.com/150",
+      "description": "Comfortable trousers for casual and formal use.",
+      "price": "45 $",
+      "brand": "Brand F",
+      "category": "Pant",
+      "ratings": 4.2,
+      "creationDate": "2024-07-14T00:00:00.000Z"
+    },
+    {
+      "name": "Polo T-Shirt",
+      "image": "https://via.placeholder.com/150",
+      "description": "Polo t-shirt with a classic design.",
+      "price": "25 $",
+      "brand": "Brand B",
+      "category": "T-Shirt",
+      "ratings": 4.5,
+      "creationDate": "2024-07-15T00:00:00.000Z"
+    },
+    {
+      "name": "Suede Shoes",
+      "image": "https://via.placeholder.com/150",
+      "description": "Suede shoes with a soft finish and stylish look.",
+      "price": "85 $",
+      "brand": "Brand E",
+      "category": "Shoe",
+      "ratings": 4.8,
+      "creationDate": "2024-07-16T00:00:00.000Z"
+    },
+    {
+      "name": "Party Sari",
+      "image": "https://via.placeholder.com/150",
+      "description": "Elegant sari for weddings and parties.",
+      "price": "140 $",
+      "brand": "Brand D",
+      "category": "Sari",
+      "ratings": 4.9,
+      "creationDate": "2024-07-17T00:00:00.000Z"
+    },
+    {
+      "name": "Casual Sneakers",
+      "image": "https://via.placeholder.com/150",
+      "description": "Casual sneakers for everyday wear.",
+      "price": "60 $",
+      "brand": "Brand E",
+      "category": "Shoe",
+      "ratings": 4.5,
+      "creationDate": "2024-07-18T00:00:00.000Z"
+    },
+    {
+      "name": "Silk Sari",
+      "image": "https://via.placeholder.com/150",
+      "description": "Luxury silk sari for special events.",
+      "price": "180 $",
+      "brand": "Brand D",
+      "category": "Sari",
+      "ratings": 4.9,
+      "creationDate": "2024-07-19T00:00:00.000Z"
+    },
+    {
+      "name": "Denim Shirt",
+      "image": "https://via.placeholder.com/150",
+      "description": "Stylish denim shirt with a casual look.",
+      "price": "35 $",
+      "brand": "Brand A",
+      "category": "Shirt",
+      "ratings": 4.4,
+      "creationDate": "2024-07-20T00:00:00.000Z"
+    },
+    {
+      "name": "Slim Fit Pant",
+      "image": "https://via.placeholder.com/150",
+      "description": "Slim fit pant for a trendy look.",
+      "price": "50 $",
+      "brand": "Brand C",
+      "category": "Pant",
+      "ratings": 4.3,
+      "creationDate": "2024-07-21T00:00:00.000Z"
+    },
+    {
+      "name": "Running Tights",
+      "image": "https://via.placeholder.com/150",
+      "description": "Comfortable running tights for workouts.",
+      "price": "40 $",
+      "brand": "Brand B",
+      "category": "Tights",
+      "ratings": 4.6,
+      "creationDate": "2024-07-22T00:00:00.000Z"
+    },
+    {
+      "name": "Graphic T-Shirt",
+      "image": "https://via.placeholder.com/150",
+      "description": "T-shirt with a modern graphic print.",
+      "price": "20 $",
+      "brand": "Brand B",
+      "category": "T-Shirt",
+      "ratings": 4.7,
+      "creationDate": "2024-07-23T00:00:00.000Z"
+    },
+    {
+      "name": "Oxford Shoes",
+      "image": "https://via.placeholder.com/150",
+      "description": "Elegant oxford shoes for formal events.",
+      "price": "100 $",
+      "brand": "Brand E",
+      "category": "Shoe",
+      "ratings": 4.8,
+      "creationDate": "2024-07-24T00:00:00.000Z"
+    },
+    {
+      "name": "Blazer",
+      "image": "https://via.placeholder.com/150",
+      "description": "Sharp blazer for a formal look.",
+      "price": "120 $",
+      "brand": "Brand F",
+      "category": "Outerwear",
+      "ratings": 4.5,
+      "creationDate": "2024-07-25T00:00:00.000Z"
+    },
+    {
+      "name": "Leather Jacket",
+      "image": "https://via.placeholder.com/150",
+      "description": "Stylish leather jacket for a rugged look.",
+      "price": "150 $",
+      "brand": "Brand F",
+      "category": "Outerwear",
+      "ratings": 4.6,
+      "creationDate": "2024-07-26T00:00:00.000Z"
+    },
+    {
+      "name": "V-Neck Sweater",
+      "image": "https://via.placeholder.com/150",
+      "description": "Cozy v-neck sweater for colder days.",
+      "price": "55 $",
+      "brand": "Brand G",
+      "category": "Sweater",
+      "ratings": 4.3,
+      "creationDate": "2024-07-27T00:00:00.000Z"
+    },
+    {
+      "name": "Chinos",
+      "image": "https://via.placeholder.com/150",
+      "description": "Comfortable chinos for casual wear.",
+      "price": "50 $",
+      "brand": "Brand H",
+      "category": "Pant",
+      "ratings": 4.2,
+      "creationDate": "2024-07-28T00:00:00.000Z"
+    },
+    {
+      "name": "Bomber Jacket",
+      "image": "https://via.placeholder.com/150",
+      "description": "Trendy bomber jacket with a modern design.",
+      "price": "75 $",
+      "brand": "Brand I",
+      "category": "Outerwear",
+      "ratings": 4.5,
+      "creationDate": "2024-07-29T00:00:00.000Z"
+    },
+    {
+      "name": "Crew Neck T-Shirt",
+      "image": "https://via.placeholder.com/150",
+      "description": "Simple crew neck t-shirt for daily use.",
+      "price": "18 $",
+      "brand": "Brand B",
+      "category": "T-Shirt",
+      "ratings": 4.0,
+      "creationDate": "2024-07-30T00:00:00.000Z"
+    },
+    {
+      "name": "Corduroy Pants",
+      "image": "https://via.placeholder.com/150",
+      "description": "Stylish corduroy pants for a unique look.",
+      "price": "60 $",
+      "brand": "Brand H",
+      "category": "Pant",
+      "ratings": 4.4,
+      "creationDate": "2024-07-31T00:00:00.000Z"
+    },
+    {
+      "name": "Sweater Vest",
+      "image": "https://via.placeholder.com/150",
+      "description": "Versatile sweater vest for layering.",
+      "price": "45 $",
+      "brand": "Brand G",
+      "category": "Sweater",
+      "ratings": 4.2,
+      "creationDate": "2024-08-01T00:00:00.000Z"
+    },
+    {
+      "name": "Pullover Hoodie",
+      "image": "https://via.placeholder.com/150",
+      "description": "Comfortable pullover hoodie for casual outings.",
+      "price": "65 $",
+      "brand": "Brand I",
+      "category": "Hoodie",
+      "ratings": 4.6,
+      "creationDate": "2024-08-02T00:00:00.000Z"
+    },
+    {
+      "name": "Denim Jacket",
+      "image": "https://via.placeholder.com/150",
+      "description": "Classic denim jacket with a timeless design.",
+      "price": "85 $",
+      "brand": "Brand J",
+      "category": "Outerwear",
+      "ratings": 4.7,
+      "creationDate": "2024-08-03T00:00:00.000Z"
+    },
+    {
+      "name": "Track Pants",
+      "image": "https://via.placeholder.com/150",
+      "description": "Comfortable track pants for sports and exercise.",
+      "price": "40 $",
+      "brand": "Brand K",
+      "category": "Pant",
+      "ratings": 4.3,
+      "creationDate": "2024-08-04T00:00:00.000Z"
+    },
+    {
+      "name": "Chinos Shorts",
+      "image": "https://via.placeholder.com/150",
+      "description": "Casual chinos shorts for hot weather.",
+      "price": "35 $",
+      "brand": "Brand H",
+      "category": "Shorts",
+      "ratings": 4.1,
+      "creationDate": "2024-08-05T00:00:00.000Z"
+    },
+    {
+      "name": "Leather Boots",
+      "image": "https://via.placeholder.com/150",
+      "description": "Durable leather boots for rugged use.",
+      "price": "90 $",
+      "brand": "Brand E",
+      "category": "Boots",
+      "ratings": 4.7,
+      "creationDate": "2024-08-06T00:00:00.000Z"
+    },
+    {
+      "name": "Silk Scarf",
+      "image": "https://via.placeholder.com/150",
+      "description": "Luxurious silk scarf to complement any outfit.",
+      "price": "55 $",
+      "brand": "Brand L",
+      "category": "Accessory",
+      "ratings": 4.8,
+      "creationDate": "2024-08-07T00:00:00.000Z"
+    },
+    {
+      "name": "Cashmere Sweater",
+      "image": "https://via.placeholder.com/150",
+      "description": "Soft and warm cashmere sweater for cold weather.",
+      "price": "120 $",
+      "brand": "Brand G",
+      "category": "Sweater",
+      "ratings": 4.9,
+      "creationDate": "2024-08-08T00:00:00.000Z"
+    },
+    {
+      "name": "Peacoat",
+      "image": "https://via.placeholder.com/150",
+      "description": "Classic peacoat for a sophisticated look.",
+      "price": "130 $",
+      "brand": "Brand J",
+      "category": "Outerwear",
+      "ratings": 4.7,
+      "creationDate": "2024-08-09T00:00:00.000Z"
+    },
+    {
+      "name": "Knitted Beanie",
+      "image": "https://via.placeholder.com/150",
+      "description": "Warm knitted beanie for chilly days.",
+      "price": "25 $",
+      "brand": "Brand K",
+      "category": "Accessory",
+      "ratings": 4.4,
+      "creationDate": "2024-08-10T00:00:00.000Z"
+    },
+    {
+      "name": "Wool Coat",
+      "image": "https://via.placeholder.com/150",
+      "description": "Elegant wool coat for formal occasions.",
+      "price": "150 $",
+      "brand": "Brand J",
+      "category": "Outerwear",
+      "ratings": 4.6,
+      "creationDate": "2024-08-11T00:00:00.000Z"
+    },
+    {
+      "name": "Blazer Dress",
+      "image": "https://via.placeholder.com/150",
+      "description": "Chic blazer dress for a modern style.",
+      "price": "110 $",
+      "brand": "Brand M",
+      "category": "Dress",
+      "ratings": 4.8,
+      "creationDate": "2024-08-12T00:00:00.000Z"
+    },
+    {
+      "name": "Trench Coat",
+      "image": "https://via.placeholder.com/150",
+      "description": "Classic trench coat for a timeless look.",
+      "price": "140 $",
+      "brand": "Brand N",
+      "category": "Outerwear",
+      "ratings": 4.7,
+      "creationDate": "2024-08-13T00:00:00.000Z"
+    },
+    {
+      "name": "Rain Jacket",
+      "image": "https://via.placeholder.com/150",
+      "description": "Waterproof rain jacket for wet weather.",
+      "price": "60 $",
+      "brand": "Brand O",
+      "category": "Outerwear",
+      "ratings": 4.4,
+      "creationDate": "2024-08-14T00:00:00.000Z"
+    },
+    {
+      "name": "Puffer Vest",
+      "image": "https://via.placeholder.com/150",
+      "description": "Puffer vest for added warmth without the bulk.",
+      "price": "70 $",
+      "brand": "Brand P",
+      "category": "Outerwear",
+      "ratings": 4.6,
+      "creationDate": "2024-08-15T00:00:00.000Z"
+    },
+    {
+      "name": "Linen Pants",
+      "image": "https://via.placeholder.com/150",
+      "description": "Lightweight linen pants for hot weather.",
+      "price": "45 $",
+      "brand": "Brand Q",
+      "category": "Pant",
+      "ratings": 4.2,
+      "creationDate": "2024-08-16T00:00:00.000Z"
+    },
+    {
+      "name": "Cargo Shorts",
+      "image": "https://via.placeholder.com/150",
+      "description": "Practical cargo shorts with multiple pockets.",
+      "price": "40 $",
+      "brand": "Brand R",
+      "category": "Shorts",
+      "ratings": 4.3,
+      "creationDate": "2024-08-17T00:00:00.000Z"
+    },
+    {
+      "name": "Sleeveless Dress",
+      "image": "https://via.placeholder.com/150",
+      "description": "Stylish sleeveless dress for a modern look.",
+      "price": "90 $",
+      "brand": "Brand M",
+      "category": "Dress",
+      "ratings": 4.5,
+      "creationDate": "2024-08-18T00:00:00.000Z"
+    },
+    {
+      "name": "Wrap Dress",
+      "image": "https://via.placeholder.com/150",
+      "description": "Elegant wrap dress for various occasions.",
+      "price": "95 $",
+      "brand": "Brand M",
+      "category": "Dress",
+      "ratings": 4.7,
+      "creationDate": "2024-08-19T00:00:00.000Z"
+    },
+    {
+      "name": "Cable Knit Sweater",
+      "image": "https://via.placeholder.com/150",
+      "description": "Cozy cable knit sweater for cold days.",
+      "price": "85 $",
+      "brand": "Brand G",
+      "category": "Sweater",
+      "ratings": 4.6,
+      "creationDate": "2024-08-20T00:00:00.000Z"
+    },
+    {
+      "name": "Harem Pants",
+      "image": "https://via.placeholder.com/150",
+      "description": "Comfortable harem pants for relaxed wear.",
+      "price": "50 $",
+      "brand": "Brand Q",
+      "category": "Pant",
+      "ratings": 4.3,
+      "creationDate": "2024-08-21T00:00:00.000Z"
+    },
+    {
+      "name": "Skater Dress",
+      "image": "https://via.placeholder.com/150",
+      "description": "Trendy skater dress with a flared skirt.",
+      "price": "75 $",
+      "brand": "Brand M",
+      "category": "Dress",
+      "ratings": 4.4,
+      "creationDate": "2024-08-22T00:00:00.000Z"
+    },
+    {
+      "name": "Tank Top",
+      "image": "https://via.placeholder.com/150",
+      "description": "Basic tank top for layering or hot weather.",
+      "price": "12 $",
+      "brand": "Brand B",
+      "category": "Top",
+      "ratings": 4.1,
+      "creationDate": "2024-08-23T00:00:00.000Z"
+    },
+    {
+      "name": "High Waist Shorts",
+      "image": "https://via.placeholder.com/150",
+      "description": "Fashionable high waist shorts for a chic look.",
+      "price": "35 $",
+      "brand": "Brand R",
+      "category": "Shorts",
+      "ratings": 4.3,
+      "creationDate": "2024-08-24T00:00:00.000Z"
+    },
+    {
+      "name": "Athletic Shorts",
+      "image": "https://via.placeholder.com/150",
+      "description": "Durable athletic shorts for sports activities.",
+      "price": "30 $",
+      "brand": "Brand K",
+      "category": "Shorts",
+      "ratings": 4.2,
+      "creationDate": "2024-08-25T00:00:00.000Z"
+    },
+    {
+      "name": "Utility Jacket",
+      "image": "https://via.placeholder.com/150",
+      "description": "Functional utility jacket with multiple pockets.",
+      "price": "80 $",
+      "brand": "Brand I",
+      "category": "Outerwear",
+      "ratings": 4.4,
+      "creationDate": "2024-08-26T00:00:00.000Z"
+    },
+    {
+      "name": "Bomber Vest",
+      "image": "https://via.placeholder.com/150",
+      "description": "Stylish bomber vest for a trendy look.",
+      "price": "65 $",
+      "brand": "Brand I",
+      "category": "Outerwear",
+      "ratings": 4.5,
+      "creationDate": "2024-08-27T00:00:00.000Z"
+    },
+    {
+      "name": "Wrap Skirt",
+      "image": "https://via.placeholder.com/150",
+      "description": "Versatile wrap skirt that can be dressed up or down.",
+      "price": "45 $",
+      "brand": "Brand M",
+      "category": "Skirt",
+      "ratings": 4.3,
+      "creationDate": "2024-08-28T00:00:00.000Z"
+    },
+    {
+      "name": "Maxi Dress",
+      "image": "https://via.placeholder.com/150",
+      "description": "Flowing maxi dress perfect for summer outings.",
+      "price": "90 $",
+      "brand": "Brand M",
+      "category": "Dress",
+      "ratings": 4.7,
+      "creationDate": "2024-08-29T00:00:00.000Z"
+    },
+    {
+      "name": "Peplum Top",
+      "image": "https://via.placeholder.com/150",
+      "description": "Fashionable peplum top for a stylish appearance.",
+      "price": "55 $",
+      "brand": "Brand N",
+      "category": "Top",
+      "ratings": 4.4,
+      "creationDate": "2024-08-30T00:00:00.000Z"
+    },
+    {
+      "name": "Ski Jacket",
+      "image": "https://via.placeholder.com/150",
+      "description": "Insulated ski jacket for cold weather sports.",
+      "price": "150 $",
+      "brand": "Brand O",
+      "category": "Outerwear",
+      "ratings": 4.8,
+      "creationDate": "2024-08-31T00:00:00.000Z"
+    },
+    {
+      "name": "Oversized Sweater",
+      "image": "https://via.placeholder.com/150",
+      "description": "Cozy oversized sweater for a relaxed fit.",
+      "price": "70 $",
+      "brand": "Brand G",
+      "category": "Sweater",
+      "ratings": 4.5,
+      "creationDate": "2024-09-01T00:00:00.000Z"
+    },
+    {
+      "name": "Cargo Pants",
+      "image": "https://via.placeholder.com/150",
+      "description": "Functional cargo pants with ample storage.",
+      "price": "55 $",
+      "brand": "Brand Q",
+      "category": "Pant",
+      "ratings": 4.3,
+      "creationDate": "2024-09-02T00:00:00.000Z"
+    },
+    {
+      "name": "Mini Skirt",
+      "image": "https://via.placeholder.com/150",
+      "description": "Trendy mini skirt for a fashionable look.",
+      "price": "40 $",
+      "brand": "Brand N",
+      "category": "Skirt",
+      "ratings": 4.1,
+      "creationDate": "2024-09-03T00:00:00.000Z"
+    },
+    {
+      "name": "Hooded Sweatshirt",
+      "image": "https://via.placeholder.com/150",
+      "description": "Casual hooded sweatshirt for everyday comfort.",
+      "price": "50 $",
+      "brand": "Brand I",
+      "category": "Hoodie",
+      "ratings": 4.6,
+      "creationDate": "2024-09-04T00:00:00.000Z"
+    },
+    {
+      "name": "Jumpsuit",
+      "image": "https://via.placeholder.com/150",
+      "description": "Elegant jumpsuit for a stylish appearance.",
+      "price": "95 $",
+      "brand": "Brand M",
+      "category": "Dress",
+      "ratings": 4.7,
+      "creationDate": "2024-09-05T00:00:00.000Z"
+    }
+  ]
+  

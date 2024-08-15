@@ -10,6 +10,12 @@ const Navbar = () => {
       <li className="ml-4 mr-4">
         <NavLink to="/product">Product</NavLink>
       </li>
+      <li className="ml-4 mr-4">
+        <NavLink to="/login">Login</NavLink>
+      </li>
+      <li className="ml-4 mr-4">
+        <NavLink to="/registration">Registration</NavLink>
+      </li>
     </>
   );
 

@@ -13,7 +13,7 @@ const SingleProduct = ({ aProduct }) => {
   } = aProduct;
 
   return (
-    <div className="card card-compact bg-base-100 w-92 shadow-xl">
+    <div className="card card-compact bg-base-100 shadow-xl">
       <figure>
         <img className="w-full h-[400px]"
           src={image}

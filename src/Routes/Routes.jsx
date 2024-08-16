@@ -3,6 +3,7 @@ import Root from "../Layout/Root";
 import Home from "../Components/Home";
 import Login from "../Components/Login";
 import Registration from "../Components/Ragistration";
+import Products from "../Components/Products";
 
 const router = createBrowserRouter([
     {
@@ -12,6 +13,11 @@ const router = createBrowserRouter([
         {
             path: '/',
             element: <Home></Home>
+        },
+        {
+          path: '/products',
+          element: <Products></Products>,
+          loader: () => fetch('http://localhost:5000/productsCount')
         },
         {
             path: '/login',

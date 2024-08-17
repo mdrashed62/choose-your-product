@@ -103,7 +103,7 @@ const Products = () => {
         {/* Category Filter */}
         <select
           onChange={(e) => setSelectedCategory(e.target.value)}
-          className="bg-slate-300 rounded-md"
+          className="bg-slate-400 rounded-md"
         >
           <option value="">All Categories</option>
           <option value="Shirt">Shirt</option>

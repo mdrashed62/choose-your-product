@@ -78,7 +78,7 @@ const Products = () => {
         {/* Brand Filter */}
         <select
           onChange={(e) => setSelectedBrand(e.target.value)}
-          className="bg-slate-300 rounded-md"
+          className="bg-slate-400 rounded-md"
         >
           <option value="">All Brands</option>
           <option value="A">A</option>

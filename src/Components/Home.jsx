@@ -1,11 +1,10 @@
 
-import Products from "./Products";
-
+import Banner from "./Banner";
 
 const Home = () => {
     return (
         <div>
-            <Products></Products>
+            <Banner></Banner>
         </div>
     );
 };

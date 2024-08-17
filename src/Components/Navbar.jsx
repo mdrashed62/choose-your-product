@@ -3,7 +3,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
 
 const Navbar = () => {
-  const { logOut } = useContext(AuthContext);
+  const { logOut, user } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const navLinks = (
@@ -11,15 +11,8 @@ const Navbar = () => {
       <li>
         <NavLink to="/">Home</NavLink>
       </li>
-
       <li className="ml-4 mr-4">
         <NavLink to="/products">Products</NavLink>
-      </li>
-      <li className="ml-4 mr-4">
-        <NavLink to="/login">Login</NavLink>
-      </li>
-      <li className="ml-4 mr-4">
-        <NavLink to="/registration">Registration</NavLink>
       </li>
     </>
   );
@@ -27,10 +20,10 @@ const Navbar = () => {
   const handleSignOut = () => {
     logOut()
       .then(() => {
-        navigate("/login"); 
+        navigate("/login");
       })
       .catch((error) => {
-        console.error("Sign out error:", error);  // Handle any potential errors
+        console.error("Sign out error:", error); // Handle any potential errors
       });
   };
 
@@ -68,9 +61,26 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-1">{navLinks}</ul>
         </div>
         <div className="navbar-end">
-          <button onClick={handleSignOut} className="px-5 py-2 rounded-md bg-slate-200">
-            Log Out
-          </button>
+          {user ? (
+            <button
+              onClick={handleSignOut}
+              className="px-5 py-2 rounded-md bg-slate-200"
+            >
+              Log Out
+            </button>
+          ) : (
+            <>
+              <NavLink to="/login" className="px-5 py-2 rounded-md bg-slate-200">
+                Login
+              </NavLink>
+              <NavLink
+                to="/registration"
+                className="px-5 py-2 rounded-md bg-slate-200 ml-4"
+              >
+                Register
+              </NavLink>
+            </>
+          )}
         </div>
       </div>
     </div>

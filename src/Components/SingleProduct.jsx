@@ -42,7 +42,7 @@ const SingleProduct = ({ aProduct }) => {
           </div>
           <div className="flex justify-between">
             <p>{formattedDate}</p>
-            <p className=" font-bold">${numericPrice.toFixed(2)}</p>
+            <p className=" font-bold">{numericPrice.toFixed(2)}</p>
           </div>
         </div>
       </div>

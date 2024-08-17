@@ -123,7 +123,7 @@ const Products = () => {
         {/* Price Range Filter */}
         <select
           onChange={(e) => setSelectedPriceRange(e.target.value)}
-          className="bg-slate-300 rounded-md"
+          className="bg-slate-400 rounded-md"
         >
           <option value="">All Prices</option>
           <option value="low">Below $50</option>

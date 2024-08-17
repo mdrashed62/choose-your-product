@@ -12,7 +12,7 @@ const Products = () => {
   const { count } = data || {};
   const numberOfPages = Math.ceil(count / itemPerPage);
 
-  const [search, setSearch] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
   const [selectedBrand, setSelectedBrand] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
   const [selectedPriceRange, setSelectedPriceRange] = useState("");
@@ -26,7 +26,7 @@ const Products = () => {
     fetch(
       `https://choose-products-server-scic.onrender.com/products?page=${currentPage}&size=${itemPerPage}&sort=${
         asc ? "asc" : "desc"
-      }&search=${search}&brand=${selectedBrand}&category=${selectedCategory}&priceRange=${selectedPriceRange}`
+      }&brand=${selectedBrand}&category=${selectedCategory}&priceRange=${selectedPriceRange}`
     )
       .then((res) => res.json())
       .then((data) => setProduct(data));
@@ -34,7 +34,6 @@ const Products = () => {
     currentPage,
     itemPerPage,
     asc,
-    search,
     selectedBrand,
     selectedCategory,
     selectedPriceRange,
@@ -60,9 +59,12 @@ const Products = () => {
 
   const handleSearch = (e) => {
     e.preventDefault();
-    const searchText = e.target.search.value;
-    setSearch(searchText);
+    setSearchTerm(e.target.search.value);
   };
+
+  const filteredServices = product.filter((aProduct) =>
+    aProduct.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   return (
     <div>
@@ -133,22 +135,22 @@ const Products = () => {
       </div>
 
       {/* Search Form */}
-      <form onSubmit={handleSearch} className="mt-4">
-        <input
-          type="text"
-          className="bg-slate-300 py-1 rounded-md"
-          name="search"
-          placeholder="Search products..."
-        />
-        <input
-          type="submit"
-          value="Search"
-          className="px-3 py-1 rounded-md text-white bg-blue-400 ml-2"
-        />
+      <form onSubmit={handleSearch} className="mb-6 lg:w-1/2 mt-4">
+        <div className="w-full mx-auto">
+          <input
+            className="bg-gray-300 px-4 cursor mx-auto py-2 w-[50%] lg:w-[80%] rounded-md"
+            placeholder="Search"
+            type="text"
+            name="search"
+          />
+          <button className="px-6 lg:w-[15%] py-2 text-white ml-4 bg-[#008DDA] rounded-md">
+            Search
+          </button>
+        </div>
       </form>
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 lg:mt-10">
-        {product.map((aProduct) => (
+        {filteredServices.map((aProduct) => (
           <SingleProduct key={aProduct._id} aProduct={aProduct}></SingleProduct>
         ))}
       </div>

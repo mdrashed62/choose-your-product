@@ -5,6 +5,7 @@ import "./products.css";
 
 const Products = () => {
   const [product, setProduct] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState([]);
   const [itemPerPage, setItemPerPage] = useState(8);
   const [currentPage, setCurrentPage] = useState(1);
   const [asc, setAsc] = useState(true);
@@ -26,18 +27,52 @@ const Products = () => {
     fetch(
       `https://choose-products-server-scic.onrender.com/products?page=${currentPage}&size=${itemPerPage}&sort=${
         asc ? "asc" : "desc"
-      }&brand=${selectedBrand}&category=${selectedCategory}&priceRange=${selectedPriceRange}`
+      }`
     )
       .then((res) => res.json())
-      .then((data) => setProduct(data));
-  }, [
-    currentPage,
-    itemPerPage,
-    asc,
-    selectedBrand,
-    selectedCategory,
-    selectedPriceRange,
-  ]);
+      .then((data) => {
+        setProduct(data);
+        setFilteredProducts(data);
+      });
+  }, [currentPage, itemPerPage, asc]);
+
+  useEffect(() => {
+    handleFilters();
+  }, [selectedBrand, selectedCategory, selectedPriceRange, searchTerm]);
+
+  const handleFilters = () => {
+    let updatedProducts = product;
+
+    if (selectedBrand) {
+      updatedProducts = updatedProducts.filter(
+        (item) => item.brand === selectedBrand
+      );
+    }
+
+    if (selectedCategory) {
+      updatedProducts = updatedProducts.filter(
+        (item) => item.category === selectedCategory
+      );
+    }
+
+    if (selectedPriceRange) {
+      updatedProducts = updatedProducts.filter((item) => {
+        if (selectedPriceRange === "low") return item.price < 50;
+        if (selectedPriceRange === "medium")
+          return item.price >= 50 && item.price <= 100;
+        if (selectedPriceRange === "high") return item.price > 100;
+        return true;
+      });
+    }
+
+    if (searchTerm) {
+      updatedProducts = updatedProducts.filter((item) =>
+        item.name.toLowerCase().includes(searchTerm.toLowerCase())
+      );
+    }
+
+    setFilteredProducts(updatedProducts);
+  };
 
   const handleItemPerPage = (e) => {
     const val = parseInt(e.target.value);
@@ -62,15 +97,11 @@ const Products = () => {
     setSearchTerm(e.target.search.value);
   };
 
-  const filteredServices = product.filter((aProduct) =>
-    aProduct.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-
   return (
     <div>
       <button
         onClick={() => setAsc(!asc)}
-        className="px-4 py-2 rounded-md bg-blue-400 text-white"
+        className="px-4 py-2 rounded-md bg-blue-500 text-white"
       >
         {asc ? "Price: Low to High" : "Price: High to Low"}
       </button>
@@ -80,7 +111,7 @@ const Products = () => {
         {/* Brand Filter */}
         <select
           onChange={(e) => setSelectedBrand(e.target.value)}
-          className="bg-slate-400 rounded-md"
+          className="bg-slate-400 rounded-md p-1"
         >
           <option value="">All Brands</option>
           <option value="A">A</option>
@@ -94,12 +125,10 @@ const Products = () => {
           <option value="I">I</option>
           <option value="J">J</option>
           <option value="K">K</option>
-          <option value="Z">L</option>
+          <option value="L">L</option>
           <option value="M">M</option>
           <option value="N">N</option>
           <option value="O">O</option>
-
-          {/* Add more brands here */}
         </select>
 
         {/* Category Filter */}
@@ -143,14 +172,14 @@ const Products = () => {
             type="text"
             name="search"
           />
-          <button className="px-6 lg:w-[15%] py-2 text-white ml-4 bg-[#008DDA] rounded-md">
+          <button className="px-6 lg:w-[15%] py-2 text-white ml-4 bg-blue-500 rounded-md">
             Search
           </button>
         </div>
       </form>
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-4 lg:mt-10">
-        {filteredServices.map((aProduct) => (
+        {filteredProducts.map((aProduct) => (
           <SingleProduct key={aProduct._id} aProduct={aProduct}></SingleProduct>
         ))}
       </div>

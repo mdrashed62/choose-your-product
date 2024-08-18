@@ -2,8 +2,8 @@ import bannerPhoto from '../assets/ProductsImg.jpg'
 
 const Banner = () => {
   return (
-    <div className=''>
-      <img src={bannerPhoto} alt="Banner" className="h-[500px] rounded-lg" />
+    <div className='mt-6'>
+      <img src={bannerPhoto} alt="Banner" className="lg:h-[500px] rounded-lg" />
     </div>
   );
 };

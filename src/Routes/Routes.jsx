@@ -5,6 +5,8 @@ import Login from "../Components/Login";
 import Registration from "../Components/Ragistration";
 import Products from "../Components/Products";
 import PrivateRoute from "./PrivateRoute";
+import AboutUs from "../Components/AboutUs";
+import ContactUs from "../Components/ContactUs";
 
 const router = createBrowserRouter([
   {
@@ -24,7 +26,7 @@ const router = createBrowserRouter([
         ),
         loader: () =>
           fetch(
-            "https://choose-products-server-scic.onrender.com/productsCount"
+            "https://choose-products-server-scic-1.onrender.com/productsCount"
           ),
       },
       {
@@ -34,6 +36,14 @@ const router = createBrowserRouter([
       {
         path: "/registration",
         element: <Registration></Registration>,
+      },
+      {
+        path: "/aboutUs",
+        element: <AboutUs></AboutUs>,
+      },
+      {
+        path: "/contactUs",
+        element: <ContactUs></ContactUs>,
       },
     ],
   },

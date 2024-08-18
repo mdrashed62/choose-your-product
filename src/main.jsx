@@ -9,7 +9,7 @@ import router from './Routes/Routes';
 import AuthProvider from './Providers/AuthProvider';
 
 createRoot(document.getElementById('root')).render(
- <div className='max-w-6xl mx-auto'>
+ <div className='max-w-6xl px-1 mx-auto'>
    <StrictMode>
     <AuthProvider>
     <RouterProvider router={router} />

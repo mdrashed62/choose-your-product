@@ -25,7 +25,7 @@ const Products = () => {
 
   useEffect(() => {
     fetch(
-      `https://choose-products-server-scic.onrender.com/products?page=${currentPage}&size=${itemPerPage}&sort=${
+      `https://choose-products-server-scic-1.onrender.com/products?page=${currentPage}&size=${itemPerPage}&sort=${
         asc ? "asc" : "desc"
       }`
     )
@@ -101,7 +101,7 @@ const Products = () => {
     <div>
       <button
         onClick={() => setAsc(!asc)}
-        className="px-4 py-2 rounded-md bg-blue-500 text-white"
+        className="px-4 lg:py-2 py-1 rounded-md bg-blue-500 text-white"
       >
         {asc ? "Price: Low to High" : "Price: High to Low"}
       </button>
@@ -167,12 +167,12 @@ const Products = () => {
       <form onSubmit={handleSearch} className="mb-6 lg:w-1/2 mt-4">
         <div className="w-full mx-auto">
           <input
-            className="bg-gray-300 px-4 cursor mx-auto py-2 w-[50%] lg:w-[80%] rounded-md"
+            className="bg-gray-300 px-4 cursor mx-auto lg:py-2 py-1 lg:w-[80%] rounded-md"
             placeholder="Search"
             type="text"
             name="search"
           />
-          <button className="px-6 lg:w-[15%] py-2 text-white ml-4 bg-blue-500 rounded-md">
+          <button className="px-6 lg:w-[15%] lg:py-2 py-1 text-white ml-4 bg-blue-500 rounded-md">
             Search
           </button>
         </div>

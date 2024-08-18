@@ -20,7 +20,7 @@ const SingleProduct = ({ aProduct }) => {
   return (
     <div className="card card-compact bg-base-100">
       <figure>
-        <img className="w-full h-[400px]"
+        <img className="w-full lg:h-[400px]"
           src={image}
           alt={name}
         />
@@ -38,7 +38,7 @@ const SingleProduct = ({ aProduct }) => {
         <div>
           <div className="flex justify-between">
             <p>{category}</p>
-            <p>{brand}</p>
+            <p>Brand {brand}</p>
           </div>
           <div className="flex justify-between">
             <p>{formattedDate}</p>
